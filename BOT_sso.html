@@ -69,7 +69,7 @@
 <body>
     <div id="chatwindow">
         <div id="header">
-            SSO Test Bot
+            Happy Agent
         </div>
         <div id="subheader">
             <span id="loginStatus">You are not logged in on the website.</span>
@@ -85,7 +85,8 @@
         // See documentation (https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-sso?tabs=webApp)
         const clientId = "8e202dad-9ffa-4ce6-889b-0d04dde0cf71"
         const tenantId = "cb80a1cd-6550-4e99-8c5a-1aa822ecea1e"
-        const tokenEndpoint = "https://defaultcb80a1cd65504e998c5a1aa822ecea.1e.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cra88_happyAgent/directline/token?api-version=2022-03-01-preview" // you can find the token URL via the Mobile app channel configuration
+        // https://defaultcb80a1cd65504e998c5a1aa822ecea.1e.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cra88_happyAgent/directline/token?api-version=2022-03-01-preview
+        const tokenEndpoint = "https://defaultcb80a1cd65504e998c5a1aa822ecea.1e.environment.api.powerplatform.com/copilotstudio/dataverse-backed/authenticated/bots/cra88_happyAgent/conversations?api-version=2022-03-01-preview" // you can find the token URL via the Mobile app channel configuration
 
         // Config object to be passed to Msal on creation
         const msalConfig = {
@@ -217,8 +218,6 @@
             return await res.json();
         } 
   
-
-   
         async function renderChatWidget() {
 
             var userID = user?.localAccountId != null ?
