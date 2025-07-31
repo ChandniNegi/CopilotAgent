@@ -135,6 +135,10 @@
             }
         }
 
+        window.onload = function () {
+  onSignInClick();
+};
+
         // Retrieve if user is currently logged in
         let user = null;
         const accounts = msalInstance.getAllAccounts();
