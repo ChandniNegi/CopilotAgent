@@ -111,6 +111,7 @@
 
         // Handle login request after user clicks on login button
         async function onSignInClick() {
+            alert("running..");
             try {
                 const loginResponse = await msalInstance.loginPopup(loginRequest);
             } catch (err) {
