@@ -53,7 +53,7 @@
     const msalInstance = new msal.PublicClientApplication(msalConfig);
 
     async function onSignInClick() {
-      alert("danger..");
+        alert("danger..");
       const loginRequest = {
         scopes: ["User.Read", "openid", "profile"],
       };
@@ -67,6 +67,7 @@
           try {
             const response = await msalInstance.ssoSilent(loginRequest);
             user = response.account;
+            console.log("User Logged in => ",user)
             msalInstance.setActiveAccount(user);
             await renderChatWidget();
           } catch (err) {
@@ -112,10 +113,11 @@
     async function exchangeTokenAsync(resourceUri) {
       let user = msalInstance.getAllAccounts();
       if (user.length <= 0) return null;
-
+        console.log("This is user in exchangetoken=> ",user)
       const tokenRequest = { scopes: [resourceUri] };
       try {
         const tokenResponse = await msalInstance.acquireTokenSilent(tokenRequest);
+        console.log("This is tokenResponse=>",tokenResponse)
         return tokenResponse.accessToken;
       } catch (err) {
         console.log(err);
