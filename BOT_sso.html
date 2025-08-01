@@ -53,6 +53,7 @@
     const msalInstance = new msal.PublicClientApplication(msalConfig);
 
     async function onSignInClick() {
+      alert("danger..");
       const loginRequest = {
         scopes: ["User.Read", "openid", "profile"],
       };
