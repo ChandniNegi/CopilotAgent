@@ -19,10 +19,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- Custom Stylesheet -->
-  <link href="ser_Insight365_stylesheet" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">  
 </head>
 
 <body>
@@ -37,15 +34,15 @@
 
   <!-- Chat SSO Script -->
   <script type="text/javascript">
-       const clientId = "8e202dad-9ffa-4ce6-889b-0d04dde0cf71"
+       const clientId = "da8ed98a-6528-4409-bd9a-854ec6508053"
         const tenantId = "cb80a1cd-6550-4e99-8c5a-1aa822ecea1e"
-    const tokenEndpoint = "https://defaultcb80a1cd65504e998c5a1aa822ecea.1e.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cra88_happyAgent/directline/token?api-version=2022-03-01-preview";
+    const tokenEndpoint = "https://defaultcb80a1cd65504e998c5a1aa822ecea.1e.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cra88_demoAgent/directline/token?api-version=2022-03-01-preview";
 
     const msalConfig = {
       auth: {
         clientId: clientId,
         authority: "https://login.microsoftonline.com/" + tenantId,
-        redirectUri: "https://chandninegi.github.io/CopilotAgent/BOT_sso.html",
+        redirectUri: "https://chandninegi.github.io/CopilotAgent/",
       },
       cache: {
         cacheLocation: "sessionStorage",
@@ -246,7 +243,7 @@
       };
 
       window.WebChat.renderWebChat({
-        directLine,
+        directLine,                                   
         store,
         userID,
         styleOptions,
