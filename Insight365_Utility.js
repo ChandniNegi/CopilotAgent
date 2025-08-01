@@ -2,21 +2,21 @@
 
 // TODO Change parameters below to your client id, tenant id and token endpoint.
 // See documentation (https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-sso?tabs=webApp)
-const clientId = "310f8b9b-5434-4416-a44e-4f9e7499cfe7";
-const tenantId = "5db30893-fb80-480e-be22-911156d0e5e0";
+const clientId = "da8ed98a-6528-4409-bd9a-854ec6508053";
+const tenantId = "cb80a1cd-6550-4e99-8c5a-1aa822ecea1e";
 //Staging Production DirectLine token
 // const tokenEndpoint =
 //   "https://8e0a9f6142454f9b8a1a3247bca2d2.35.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cr2a3_salesAgent/directline/token?api-version=2022-03-01-preview"; // you can find the token URL via the Mobile app channel configuration
 //Production Token Directline
 const tokenEndpoint =
-  "https://c81dcd50c0fd49b2b9b4661ef9fc17.ed.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cr262_agent/directline/token?api-version=2022-03-01-preview"; // you can find the token URL via the Mobile app channel configuration
+  "https://defaultcb80a1cd65504e998c5a1aa822ecea.1e.environment.api.powerplatform.com/powervirtualagents/botsbyschema/cra88_demoAgent/directline/token?api-version=2022-03-01-preview"; // you can find the token URL via the Mobile app channel configuration
 
 // Config object to be passed to Msal on creation
 const msalConfig = {
   auth: {
     clientId: clientId,
     authority: "https://login.microsoftonline.com/" + tenantId,
-    // redirectUri: "https://grazitti936.crm8.dynamics.com/", //Staging
+    // redirectUri: "https://chandninegi.github.io/CopilotAgent/", //Staging
     redirectUri: "https://grazitti934.crm8.dynamics.com/", //Production
   },
   cache: {
