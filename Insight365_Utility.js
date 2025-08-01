@@ -17,7 +17,7 @@ const msalConfig = {
     clientId: clientId,
     authority: "https://login.microsoftonline.com/" + tenantId,
     // redirectUri: "https://chandninegi.github.io/CopilotAgent/", //Staging
-    redirectUri: "https://grazitti934.crm8.dynamics.com/", //Production
+    redirectUri: "https://chandninegi.github.io/CopilotAgent/", //Production
   },
   cache: {
     cacheLocation: "sessionStorage", // This configures where your cache will be stored
