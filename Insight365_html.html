@@ -13,14 +13,14 @@
     <script type="text/javascript">
         if (typeof msal === 'undefined') document.write(unescape("%3Cscript src='https://alcdn.msftauth.net/browser/2.32.0/js/msal-browser.min.js' type='text/javascript' %3E%3C/script%3E"));
     </script>
-    <script src="Insight365_Utility.js"></script>
+    <script src="Insight365_Utility.js" defer></script>
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
           rel="stylesheet">
-    <link href="ser_Insight365_stylesheet" rel="stylesheet" />
+    <link href="Insight365_stylesheet.css" rel="stylesheet" />
 
 </head>
 
@@ -28,7 +28,7 @@
         <!-- Chat Container -->
         <div id="chatContainer" style="display: block;">
             <div id="chatHeader">
-                <img src="ser_Insight365_BotImage" alt="Bot">
+                <img src="Insight365_BotImage.png" alt="Bot">
                 Demo Agent
             </div>
             <div id="webchat" role="main"></div>
